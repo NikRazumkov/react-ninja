@@ -1,0 +1,121 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+}
+li:last-child {
+  margin: 30px 0 0 0;
+}
+
+
+a {
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+body {
+  background: #edeef0;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+  font-size: 13px;
+  font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,"Noto Sans Armenian","Noto Sans Bengali","Noto Sans Cherokee","Noto Sans Devanagari","Noto Sans Ethiopic","Noto Sans Georgian","Noto Sans Hebrew","Noto Sans Kannada","Noto Sans Khmer","Noto Sans Lao","Noto Sans Osmanya","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Thai",sans-serif;
+  line-height: 1.154;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+.App {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 42px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-template-areas:
+          "h h"
+          "a m";
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+header {
+  grid-area: h;
+  background: #4a76a8;
+  height: 42px;
+  border-bottom: 1px solid #4872a3;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  width: 149px;
+}
+
+.search__input {
+  border: 0;
+  box-sizing: border-box;
+  margin: 7px 0;
+  height: 28px;
+  line-height: 16px;
+  width: 230px;
+  border-radius: 14px;
+  transition: background-color 0.05s, color 0.05s;
+  padding: 6px 6px 6px 19px;
+  border-left: 8px solid transparent;
+  background: #224b7a url(https://vk.com/images/svg_icons/ic_head_loupe.svg) no-repeat left 8px;
+  color: #d9e2ec;
+}
+
+.search__input:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+aside {
+  grid-area: a;
+  display: flex;
+}
+
+a.nav__link {
+  color: #285473;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+a.nav__link:hover {
+  background: #e1e5eb;
+}
+
+
+main {
+  grid-area: m;
+  display: flex;
+  background: #ffffff;
+}
+
+.main__img {
+  max-width: 100%;
+}
+
+
+
+
